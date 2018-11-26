@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+	</head>
+	<style type="text/css">
+	
+	</style>
+	<body>
+		<div id="app">
+			<!-- in 后面我们放过 普通数组,对象数组,对象,还可以放数字-->
+			<!--注意 如果会用 v-for 迭代数字的话,前面的 count 值从1开始-->
+		<p v-for="count in 10"> 这是第{{count}}次循环</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="lib/vue.js"></script>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:"#app", 
+			data: {  
+			user:{
+				id:1,
+				name:'托尼.啊大大',
+				gender:'男'
+			}
+			},
+			methods:{	
+			
+			}
+		})
+	</script>
+</html>
+
+
+
+
